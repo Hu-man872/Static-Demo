@@ -1,10 +1,10 @@
 const menuToggle = document.querySelector(".menu-toggle");
 const siteNav = document.querySelector(".site-nav");
 const navLinks = document.querySelectorAll(".site-nav a");
-const year = document.querySelector("#year");
+const faqButtons = document.querySelectorAll(".faq-question");
 const form = document.querySelector("#appointment-form");
 const formNote = document.querySelector("#form-note");
-const faqButtons = document.querySelectorAll(".faq-question");
+const year = document.querySelector("#year");
 const revealItems = document.querySelectorAll(".reveal");
 
 if (year) {
@@ -15,14 +15,14 @@ if (menuToggle && siteNav) {
   menuToggle.addEventListener("click", () => {
     const isOpen = siteNav.classList.toggle("is-open");
     menuToggle.setAttribute("aria-expanded", String(isOpen));
-    document.body.classList.toggle("nav-open", isOpen);
+    document.body.classList.toggle("menu-open", isOpen);
   });
 
   navLinks.forEach((link) => {
     link.addEventListener("click", () => {
       siteNav.classList.remove("is-open");
       menuToggle.setAttribute("aria-expanded", "false");
-      document.body.classList.remove("nav-open");
+      document.body.classList.remove("menu-open");
     });
   });
 }
@@ -45,7 +45,7 @@ if (form && formNote) {
 
     const formData = new FormData(form);
     const name = formData.get("name")?.toString().trim() || "Patient";
-    formNote.textContent = `Demo submitted for ${name}. In a real clinic website, this can connect to WhatsApp, booking software, or your dashboard workflow.`;
+    formNote.textContent = `Thanks, ${name}. This dental demo form was submitted locally. On a live site, this can connect to WhatsApp, GoHighLevel, or your booking workflow.`;
     formNote.classList.add("is-success");
     form.reset();
   });
@@ -62,7 +62,7 @@ if ("IntersectionObserver" in window) {
       });
     },
     {
-      threshold: 0.14
+      threshold: 0.16
     }
   );
 
