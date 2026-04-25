@@ -209,6 +209,14 @@ svg {
   transform: translateX(-50%);
 }
 
+.quick-actions.reveal {
+  transform: translateX(-50%) translateY(22px);
+}
+
+.quick-actions.reveal.is-visible {
+  transform: translateX(-50%) translateY(0);
+}
+
 .quick-action {
   display: inline-flex;
   align-items: center;
@@ -760,6 +768,11 @@ svg {
     max-width: none;
     margin-bottom: 18px;
     transform: none;
+  }
+
+  .quick-actions.reveal,
+  .quick-actions.reveal.is-visible {
+    transform: translateY(0);
   }
 
   .trust-badges {
