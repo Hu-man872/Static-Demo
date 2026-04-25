@@ -3,328 +3,495 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dr. Aria Wellness Clinic</title>
+  <title>Dr. Aanya Sharma Dental Care | Gentle Dentistry for Families</title>
   <meta
     name="description"
-    content="A premium static demo website for doctors and clinics that want a modern online presence with clear services, trust, and appointment calls to action."
+    content="A premium static dental website focused on tooth pain relief, smile confidence, easy appointment booking, and patient trust."
   >
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
     rel="stylesheet"
   >
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="page-shell">
-    <header class="site-header">
-      <div class="brand-lockup">
-        <div class="brand-mark">AW</div>
-        <div>
-          <p class="eyebrow">Private Practice Demo</p>
-          <a class="brand-name" href="#top">Dr. Aria Wellness Clinic</a>
-        </div>
-      </div>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#top" aria-label="Dr. Aanya Sharma Dental Care home">
+        <span class="brand-mark">DS</span>
+        <span class="brand-copy">
+          <strong>Dr. Aanya Sharma Dental Care</strong>
+          <small>Gentle dental care for every smile</small>
+        </span>
+      </a>
 
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle menu">
         <span></span>
         <span></span>
       </button>
 
-      <nav id="site-nav" class="site-nav">
-        <a href="#services">Services</a>
-        <a href="#doctor">Doctor</a>
-        <a href="#journey">Patient Journey</a>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="#services">Treatments</a>
+        <a href="#doctor">Dentist</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#journey">Process</a>
         <a href="#reviews">Reviews</a>
+        <a href="#faq">FAQs</a>
         <a href="#contact">Contact</a>
+        <a class="button button-primary nav-cta" href="#contact">Book Appointment</a>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <main id="top">
-      <section class="hero">
+  <div class="shell">
+    <div class="quick-actions reveal" aria-label="Quick actions">
+      <a class="quick-action" href="tel:+919860012345">Call Now</a>
+      <a class="quick-action" href="https://wa.me/919860012345" target="_blank" rel="noreferrer">WhatsApp</a>
+      <a class="quick-action quick-action-strong" href="#contact">Book Appointment</a>
+    </div>
+  </div>
+
+  <main id="top">
+    <section class="hero">
+      <div class="shell hero-grid">
         <div class="hero-copy reveal">
-          <p class="eyebrow">Modern website for doctors without one</p>
-          <h1>Give your clinic a website patients trust before they even book.</h1>
+          <p class="eyebrow">Same-day slots for dental pain and urgent care</p>
+          <h1>Get relief from tooth pain and feel confident about your smile again.</h1>
           <p class="hero-text">
-            This demo shows how a doctor website can look: polished branding, clear services,
-            appointment prompts, trust-building patient information, and a contact flow that feels
-            modern from the first click.
+            From sudden toothache and broken teeth to root canal treatment, smile correction, and
+            routine cleaning, we make dental care feel clear, calm, and easy to start.
           </p>
+
           <div class="hero-actions">
-            <a class="button button-primary" href="#contact">Book an Appointment</a>
-            <a class="button button-secondary" href="#doctor">Meet the Doctor</a>
+            <a class="button button-primary" href="#contact">Book Appointment</a>
+            <a class="button button-secondary" href="https://wa.me/919860012345" target="_blank" rel="noreferrer">Call / WhatsApp</a>
           </div>
-          <div class="hero-trust">
-            <span>15+ years practice</span>
-            <span>Same-day consult slots</span>
-            <span>Friendly follow-up care</span>
+
+          <div class="trust-badges" aria-label="Trust indicators">
+            <div class="trust-badge">
+              <strong>10+ Years</strong>
+              <span>Dental experience</span>
+            </div>
+            <div class="trust-badge">
+              <strong>8,000+</strong>
+              <span>Smiles cared for</span>
+            </div>
+            <div class="trust-badge">
+              <strong>4.9/5</strong>
+              <span>Patient satisfaction</span>
+            </div>
           </div>
         </div>
 
         <div class="hero-visual reveal">
-          <div class="hero-card clinic-card">
-            <p class="card-label">Today at the clinic</p>
-            <h2>Calm care, organised visits, easier booking.</h2>
-            <div class="schedule-list">
-              <div>
-                <span>Consultation Hours</span>
-                <strong>9:00 AM - 6:30 PM</strong>
-              </div>
-              <div>
-                <span>Available Today</span>
-                <strong>6 appointment slots</strong>
-              </div>
-              <div>
-                <span>Average Response</span>
-                <strong>Under 15 minutes</strong>
-              </div>
-            </div>
+          <div class="hero-visual-art">
+            <div class="tooth-glow"></div>
+            <svg class="tooth-illustration" viewBox="0 0 420 420" role="img" aria-label="Illustration of a healthy tooth">
+              <defs>
+                <linearGradient id="toothFill" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#ffffff"></stop>
+                  <stop offset="100%" stop-color="#eaf8f5"></stop>
+                </linearGradient>
+                <linearGradient id="leafFill" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#7fd0bf"></stop>
+                  <stop offset="100%" stop-color="#3da896"></stop>
+                </linearGradient>
+              </defs>
+              <circle cx="210" cy="210" r="178" fill="#dff7f1"></circle>
+              <path d="M139 104c26-23 63-33 104-23 53 13 86 55 86 106 0 24-7 44-20 66-15 27-25 54-31 84-7 34-19 52-39 52-12 0-20-8-24-22l-13-43-13 43c-4 14-12 22-24 22-20 0-32-18-39-52-6-30-16-57-31-84-13-22-20-42-20-66 0-35 14-63 40-83 8 22 22 40 41 53 22 15 46 22 74 23-20-9-37-23-51-41-15-18-25-39-30-62z" fill="url(#toothFill)" stroke="#bfe9df" stroke-width="8"></path>
+              <path d="M281 106c28 4 52 24 63 50-24 4-52-1-73-16-19-13-33-33-39-56 19 10 33 18 49 22z" fill="url(#leafFill)" opacity="0.95"></path>
+              <circle cx="154" cy="161" r="12" fill="#ffffff"></circle>
+              <circle cx="180" cy="137" r="6" fill="#ffffff"></circle>
+            </svg>
           </div>
 
-          <div class="hero-card doctor-card">
-            <div class="doctor-badge">MD</div>
-            <div>
-              <p class="card-label">Lead physician</p>
-              <h3>Dr. Aria Sen</h3>
-              <p>Family medicine, preventive care, chronic condition management, and long-term patient relationships.</p>
+          <div class="hero-card hero-card-main">
+            <p class="card-kicker">Why patients choose this clinic</p>
+            <h2>Gentle treatment, honest advice, and quick appointments when pain cannot wait.</h2>
+            <ul class="hero-points">
+              <li>Emergency dental pain appointments during clinic hours</li>
+              <li>Clear treatment plans with costs explained simply</li>
+              <li>Comfort-focused care for nervous adult and child patients</li>
+            </ul>
+          </div>
+
+          <div class="hero-card hero-card-compact">
+            <span class="pill">Today at the clinic</span>
+            <div class="mini-grid">
+              <article>
+                <strong>Common same-day concerns</strong>
+                <span>Tooth pain, swelling, broken tooth, gum pain, and dental sensitivity</span>
+              </article>
+              <article>
+                <strong>Booking support</strong>
+                <span>Call and WhatsApp confirmations for faster appointment scheduling</span>
+              </article>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section stats-strip reveal">
-        <div>
-          <strong>5000+</strong>
-          <span>Patients guided with structured follow-up care</span>
-        </div>
-        <div>
-          <strong>4.9/5</strong>
-          <span>Average patient satisfaction across consultations</span>
-        </div>
-        <div>
-          <strong>24 hrs</strong>
-          <span>Fast response time for non-emergency appointment requests</span>
-        </div>
-      </section>
-
-      <section id="services" class="section">
+    <section id="services" class="section">
+      <div class="shell">
         <div class="section-heading reveal">
-          <p class="eyebrow">Services</p>
-          <h2>Everything patients usually search for, clearly explained.</h2>
+          <p class="eyebrow">Treatments</p>
+          <h2>Dental treatments patients understand at a glance.</h2>
           <p>
-            A doctor website should help visitors understand the clinic quickly and feel confident
-            taking the next step.
+            The easiest way to convert visitors into bookings is to make treatments clear, simple,
+            and reassuring from the start.
           </p>
         </div>
 
-        <div class="card-grid card-grid-three">
-          <article class="info-card reveal">
-            <h3>General Consultation</h3>
-            <p>Routine checkups, symptom review, prescriptions, and medical guidance for adults and families.</p>
+        <div class="service-grid">
+          <article class="service-card reveal">
+            <span class="card-index">01</span>
+            <h3>Tooth pain and emergency dental care</h3>
+            <p>Fast help for severe pain, swelling, infection, broken teeth, and sudden dental discomfort.</p>
           </article>
-          <article class="info-card reveal">
-            <h3>Preventive Care</h3>
-            <p>Screenings, wellness planning, lifestyle support, and proactive health management.</p>
+          <article class="service-card reveal">
+            <span class="card-index">02</span>
+            <h3>Root canal treatment</h3>
+            <p>Save an infected tooth and get relief from deep pain with careful, structured treatment.</p>
           </article>
-          <article class="info-card reveal">
-            <h3>Follow-Up Management</h3>
-            <p>Post-visit reviews, treatment monitoring, repeat consultations, and reminder coordination.</p>
+          <article class="service-card reveal">
+            <span class="card-index">03</span>
+            <h3>Teeth cleaning and polishing</h3>
+            <p>Remove plaque, stains, and buildup to keep your mouth fresh, clean, and healthier.</p>
           </article>
-          <article class="info-card reveal">
-            <h3>Chronic Condition Care</h3>
-            <p>Structured support for diabetes, blood pressure, thyroid, and other ongoing medical needs.</p>
+          <article class="service-card reveal">
+            <span class="card-index">04</span>
+            <h3>Tooth extraction</h3>
+            <p>Gentle removal for damaged or painful teeth when saving the tooth is not the best option.</p>
           </article>
-          <article class="info-card reveal">
-            <h3>Second Opinions</h3>
-            <p>Clear explanations and thoughtful reassessment for patients seeking more confidence in their plan.</p>
+          <article class="service-card reveal">
+            <span class="card-index">05</span>
+            <h3>Caps, crowns, and bridges</h3>
+            <p>Restore damaged or missing teeth so chewing feels better and your smile looks natural.</p>
           </article>
-          <article class="info-card reveal">
-            <h3>Clinic Coordination</h3>
-            <p>Appointment support, document guidance, and a smoother handoff between booking and treatment.</p>
+          <article class="service-card reveal">
+            <span class="card-index">06</span>
+            <h3>Dental implants</h3>
+            <p>A long-term solution for replacing missing teeth with stability, comfort, and confidence.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="card-index">07</span>
+            <h3>Braces and smile alignment</h3>
+            <p>Straighter teeth and better bite support through treatment plans matched to your goals.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="card-index">08</span>
+            <h3>Kids dental care</h3>
+            <p>Friendly, low-stress visits that help children feel safe while protecting growing teeth.</p>
           </article>
         </div>
-      </section>
 
-      <section id="doctor" class="section split-section">
-        <div class="portrait-panel reveal">
-          <div class="portrait-frame">
-            <div class="portrait-circle">Dr</div>
+        <div class="inline-cta reveal">
+          <p>Not sure which dental treatment you need?</p>
+          <a class="button button-primary" href="#contact">Book a Dental Consultation</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="doctor" class="section section-soft">
+      <div class="shell doctor-grid">
+        <div class="doctor-visual reveal">
+          <div class="doctor-frame">
+            <svg class="doctor-illustration" viewBox="0 0 420 500" role="img" aria-label="Illustration of a female dentist">
+              <defs>
+                <linearGradient id="dentBg" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#e7faf5"></stop>
+                  <stop offset="100%" stop-color="#ccebe3"></stop>
+                </linearGradient>
+                <linearGradient id="coatFill" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#ffffff"></stop>
+                  <stop offset="100%" stop-color="#edf9f5"></stop>
+                </linearGradient>
+              </defs>
+              <rect x="0" y="0" width="420" height="500" rx="42" fill="url(#dentBg)"></rect>
+              <circle cx="326" cy="92" r="44" fill="#f7d9c7" opacity="0.7"></circle>
+              <circle cx="84" cy="404" r="56" fill="#dbf4ed"></circle>
+              <ellipse cx="216" cy="180" rx="86" ry="96" fill="#ffd9ca"></ellipse>
+              <path d="M135 165c3-60 37-100 86-108 56-10 100 16 116 72-25-15-49-22-70-19-13 1-24 6-35 13-14 8-29 16-48 18-19 2-35 10-49 24z" fill="#26413b"></path>
+              <path d="M155 280c21 19 41 28 61 28 18 0 36-8 55-28l24 18c31 23 50 58 54 101H81c4-43 23-78 54-101z" fill="url(#coatFill)"></path>
+              <path d="M192 255c7 8 16 12 26 12 12 0 21-4 29-12v50c0 11-9 20-20 20h-15c-11 0-20-9-20-20z" fill="#ffd9ca"></path>
+              <path d="M191 224c7 14 17 22 31 22 14 0 24-8 31-22" fill="none" stroke="#c68569" stroke-width="7" stroke-linecap="round"></path>
+              <circle cx="190" cy="178" r="6" fill="#26413b"></circle>
+              <circle cx="245" cy="178" r="6" fill="#26413b"></circle>
+              <path d="M214 201h9" stroke="#26413b" stroke-width="5" stroke-linecap="round"></path>
+              <path d="M272 334c8-16 16-29 27-40 18 18 32 44 36 72" fill="none" stroke="#7cb9ab" stroke-width="8" stroke-linecap="round"></path>
+              <path d="M133 361c30-3 53-16 69-38" fill="none" stroke="#0b7767" stroke-width="8" stroke-linecap="round"></path>
+              <rect x="282" y="289" width="22" height="88" rx="11" fill="#ffffff" stroke="#0b7767" stroke-width="5"></rect>
+              <rect x="270" y="299" width="46" height="16" rx="8" fill="#ffffff" stroke="#0b7767" stroke-width="5"></rect>
+            </svg>
           </div>
-          <div class="credential-list">
-            <span>MBBS, MD Family Medicine</span>
-            <span>Member, Preventive Care Association</span>
-            <span>Consultation in English and Hindi</span>
+
+          <div class="doctor-floating-card">
+            <strong>Painless, patient-friendly dentistry</strong>
+            <span>Extra care for anxious patients, children, and first-time dental visitors.</span>
           </div>
         </div>
 
-        <div class="split-copy reveal">
-          <p class="eyebrow">Doctor Profile</p>
-          <h2>A website that feels personal, credible, and easy to trust.</h2>
+        <div class="doctor-copy reveal">
+          <p class="eyebrow">Dentist</p>
+          <h2>A dental doctor patients trust for both comfort and results.</h2>
           <p>
-            Patients do not just want a name and phone number. They want to know who the doctor is,
-            what care style they can expect, and whether the clinic feels organised and approachable.
+            Dr. Aanya Sharma combines clinical precision with a reassuring chairside manner, helping
+            patients feel understood, informed, and calmer about treatment.
           </p>
-          <p>
-            This section gives doctors a professional profile, clinical focus areas, credentials, and
-            a calm brand presence that feels reassuring instead of generic.
-          </p>
-          <div class="detail-rows">
-            <div>
-              <span>Special focus</span>
-              <strong>Preventive family care and long-term treatment planning</strong>
-            </div>
-            <div>
-              <span>Clinic hours</span>
-              <strong>Monday to Saturday, 9:00 AM - 6:30 PM</strong>
-            </div>
-            <div>
-              <span>Address</span>
-              <strong>12 Greenview Avenue, Wellness District</strong>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <section id="journey" class="section">
+          <div class="doctor-stats">
+            <article>
+              <strong>10+ Years Experience</strong>
+              <span>General dentistry, cosmetic dentistry, and restorative dental care</span>
+            </article>
+            <article>
+              <strong>Special Focus</strong>
+              <span>Root canal treatment, smile restoration, implants, and painless extractions</span>
+            </article>
+            <article>
+              <strong>Human Approach</strong>
+              <span>Clear explanations, honest advice, gentle hands, and realistic treatment plans</span>
+            </article>
+            <article>
+              <strong>Family-Friendly Care</strong>
+              <span>Comfortable consultations for adults, seniors, and children in one clinic</span>
+            </article>
+          </div>
+
+          <a class="button button-primary" href="#contact">Book With Dr. Aanya Sharma</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="why-us" class="section">
+      <div class="shell">
         <div class="section-heading reveal">
-          <p class="eyebrow">Patient Journey</p>
-          <h2>Show patients exactly what happens from booking to recovery.</h2>
+          <p class="eyebrow">Why Choose Us</p>
+          <h2>Dental care that feels modern, honest, and easy to say yes to.</h2>
           <p>
-            Clear process design reduces hesitation and makes the clinic feel dependable.
+            Patients are more likely to book when the clinic looks trustworthy and the process feels
+            simple instead of overwhelming.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <h3>Gentle treatment style</h3>
+            <p>Care designed to reduce fear, discomfort, and hesitation around dental treatment.</p>
+          </article>
+          <article class="feature-card reveal">
+            <h3>Clear cost and treatment explanation</h3>
+            <p>Patients understand what is needed, why it matters, and what the next step will be.</p>
+          </article>
+          <article class="feature-card reveal">
+            <h3>Modern diagnosis tools</h3>
+            <p>Better visibility and planning help treatments feel more precise and dependable.</p>
+          </article>
+          <article class="feature-card reveal">
+            <h3>Clean, sterilized clinic environment</h3>
+            <p>A polished, hygienic setup immediately improves trust and patient comfort.</p>
+          </article>
+          <article class="feature-card reveal">
+            <h3>Fast support on call and WhatsApp</h3>
+            <p>Patients can reach the clinic quickly when pain starts or a review is needed.</p>
+          </article>
+          <article class="feature-card reveal">
+            <h3>Follow-up care that stays organised</h3>
+            <p>Review visits and reminders make longer dental treatment easier to complete.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="journey" class="section section-accent">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Treatment Journey</p>
+          <h2>Help patients understand what happens from booking to recovery.</h2>
+          <p>
+            A simple process reduces anxiety and makes booking feel like a safe next step.
           </p>
         </div>
 
         <div class="journey-grid">
-          <article class="journey-step reveal">
-            <span class="step-number">01</span>
-            <h3>Book a visit</h3>
-            <p>Patients request an appointment online or call the clinic using the details on the site.</p>
+          <article class="journey-card reveal">
+            <span class="step-pill">Step 1</span>
+            <h3>Book an appointment</h3>
+            <p>Call, WhatsApp, or send your details to request a consultation at a convenient time.</p>
           </article>
-          <article class="journey-step reveal">
-            <span class="step-number">02</span>
-            <h3>Attend consultation</h3>
-            <p>The doctor reviews symptoms, provides medical advice, and documents the treatment plan.</p>
+          <article class="journey-card reveal">
+            <span class="step-pill">Step 2</span>
+            <h3>Consultation and diagnosis</h3>
+            <p>We check the problem carefully, explain the cause, and walk you through treatment options.</p>
           </article>
-          <article class="journey-step reveal">
-            <span class="step-number">03</span>
-            <h3>Receive follow-up care</h3>
-            <p>Patients get a smoother experience with reminders, aftercare guidance, and repeat visit coordination.</p>
+          <article class="journey-card reveal">
+            <span class="step-pill">Step 3</span>
+            <h3>Treatment and follow-up</h3>
+            <p>Your treatment is completed with aftercare guidance and follow-up support when needed.</p>
           </article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="reviews" class="section reviews-section">
+    <section id="reviews" class="section">
+      <div class="shell">
         <div class="section-heading reveal">
           <p class="eyebrow">Patient Reviews</p>
-          <h2>Social proof that makes a new clinic feel established.</h2>
+          <h2>Real-feeling feedback that builds confidence fast.</h2>
+          <p>
+            The most believable dental reviews usually sound simple, specific, and human.
+          </p>
         </div>
 
-        <div class="card-grid card-grid-three">
-          <blockquote class="testimonial reveal">
-            <p>"The clinic website made it easy to understand services before I called. The whole experience felt organised and professional."</p>
-            <footer>Priya M, patient</footer>
+        <div class="review-grid">
+          <blockquote class="review-card reveal">
+            <div class="stars" aria-hidden="true">★★★★★</div>
+            <p>
+              I went in with severe tooth pain and was honestly very nervous. Dr. Aanya explained
+              everything so calmly that I felt relaxed within minutes. The treatment was smoother than I expected.
+            </p>
+            <footer>
+              <strong>Ritika S.</strong>
+              <span>Root canal patient</span>
+            </footer>
           </blockquote>
-          <blockquote class="testimonial reveal">
-            <p>"I liked being able to see timings, location, and doctor details in one place. It gave me confidence to book."</p>
-            <footer>Rahul S, patient</footer>
+
+          <blockquote class="review-card reveal">
+            <div class="stars" aria-hidden="true">★★★★★</div>
+            <p>
+              The clinic is very clean, the staff is polite, and booking on WhatsApp was really easy.
+              I got my cleaning and polishing done and the whole visit felt well managed.
+            </p>
+            <footer>
+              <strong>Aditya M.</strong>
+              <span>Dental cleaning patient</span>
+            </footer>
           </blockquote>
-          <blockquote class="testimonial reveal">
-            <p>"Everything felt clear from the website itself. It did not feel like I was guessing what to expect from the clinic."</p>
-            <footer>Neha T, patient</footer>
+
+          <blockquote class="review-card reveal">
+            <div class="stars" aria-hidden="true">★★★★★</div>
+            <p>
+              My child is usually scared of dental visits, but this was the first time there was no
+              crying at all. The doctor was very gentle and patient throughout.
+            </p>
+            <footer>
+              <strong>Neha P.</strong>
+              <span>Parent of child patient</span>
+            </footer>
           </blockquote>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section faq-section">
+    <section id="faq" class="section section-soft">
+      <div class="shell">
         <div class="section-heading reveal">
           <p class="eyebrow">FAQs</p>
-          <h2>Answer the questions patients ask before they reach out.</h2>
+          <h2>Answer the common dental questions before patients ask them.</h2>
         </div>
 
         <div class="faq-list reveal">
           <article class="faq-item">
             <button class="faq-question" type="button" aria-expanded="false">
-              Do patients prefer clinics with a website?
+              Do you take same-day appointments for tooth pain?
             </button>
             <div class="faq-answer">
-              <p>Yes. A simple, clear website makes the clinic look legitimate, easier to contact, and more trustworthy than relying on social media alone.</p>
+              <p>Yes. We try to keep space for urgent dental pain, swelling, broken teeth, and sudden discomfort during clinic hours.</p>
             </div>
           </article>
 
           <article class="faq-item">
             <button class="faq-question" type="button" aria-expanded="false">
-              Can the website show services, doctor profile, and timings?
+              Is root canal treatment painful?
             </button>
             <div class="faq-answer">
-              <p>Absolutely. That is usually the minimum a private practice needs so patients understand the clinic before they book.</p>
+              <p>Modern root canal treatment is usually much more comfortable than patients expect. We focus on keeping the procedure as gentle and stress-free as possible.</p>
             </div>
           </article>
 
           <article class="faq-item">
             <button class="faq-question" type="button" aria-expanded="false">
-              Can this later connect with booking and follow-up systems?
+              Do you treat children as well?
             </button>
             <div class="faq-answer">
-              <p>Yes. This static demo is the presentation layer, and it can later connect with forms, calendars, CRMs, automations, or the doctor dashboard workflow you already built.</p>
+              <p>Yes. We offer child-friendly dental visits with a calmer approach that helps young patients feel safe and cooperative.</p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              Can I book on WhatsApp instead of calling?
+            </button>
+            <div class="faq-answer">
+              <p>Yes. Patients can use WhatsApp for appointment requests, quick questions, and follow-up coordination.</p>
             </div>
           </article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="contact" class="section contact-section">
-        <div class="contact-card reveal">
-          <div class="contact-copy">
-            <p class="eyebrow">Book or Enquire</p>
-            <h2>Make the clinic reachable in one clear step.</h2>
-            <p>
-              This form is a front-end demo to show how a doctor website can capture appointment
-              interest even before a full booking system is connected.
-            </p>
-            <div class="contact-meta">
-              <span>Call: +91 90000 12345</span>
-              <span>Email: hello@ariawellnessclinic.com</span>
-              <span>Open: Mon-Sat, 9:00 AM - 6:30 PM</span>
-            </div>
+    <section id="contact" class="section">
+      <div class="shell contact-grid">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Contact / Booking</p>
+          <h2>Make it easy for patients to book the moment they decide.</h2>
+          <p>
+            Keep the contact details visible, the form short, and the next step obvious.
+          </p>
+
+          <div class="contact-panels">
+            <article class="contact-panel">
+              <h3>Clinic Details</h3>
+              <ul>
+                <li>21 Smile Avenue, Lanka Road, Varanasi</li>
+                <li>+91 98600 12345</li>
+                <li>hello@draanyadental.com</li>
+              </ul>
+            </article>
+
+            <article class="contact-panel">
+              <h3>Working Hours</h3>
+              <ul>
+                <li>Monday - Saturday: 10:00 AM - 7:30 PM</li>
+                <li>Sunday: Emergency appointments by prior call</li>
+                <li>WhatsApp booking available during clinic hours</li>
+              </ul>
+            </article>
           </div>
-
-          <form class="appointment-form" id="appointment-form">
-            <label>
-              Full Name
-              <input type="text" name="name" placeholder="Enter patient name" required>
-            </label>
-            <label>
-              Phone Number
-              <input type="tel" name="phone" placeholder="Enter phone number" required>
-            </label>
-            <label>
-              Concern
-              <select name="service" required>
-                <option value="">Select a service</option>
-                <option>General Consultation</option>
-                <option>Preventive Care</option>
-                <option>Follow-Up Visit</option>
-                <option>Chronic Condition Review</option>
-              </select>
-            </label>
-            <label>
-              Message
-              <textarea name="message" rows="4" placeholder="Describe symptoms or preferred time"></textarea>
-            </label>
-            <button class="button button-primary button-full" type="submit">Request Appointment</button>
-            <p class="form-note" id="form-note" aria-live="polite">
-              Demo form: submitting shows the interaction without sending data anywhere.
-            </p>
-          </form>
         </div>
-      </section>
-    </main>
 
-    <footer class="site-footer">
-      <p>Demo doctor website for showcasing clinic web presence, appointment capture, and trust-building design.</p>
-      <p><span id="year"></span> Dr. Aria Wellness Clinic</p>
-    </footer>
-  </div>
+        <form class="booking-form reveal" id="appointment-form">
+          <h3>Book a Dental Appointment</h3>
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Enter patient name" required>
+          </label>
+          <label>
+            Phone
+            <input type="tel" name="phone" placeholder="Enter phone number" required>
+          </label>
+          <label>
+            Concern
+            <textarea name="concern" rows="5" placeholder="Tooth pain, cleaning, root canal, braces, implant, child dental visit, or other concern" required></textarea>
+          </label>
+          <button class="button button-primary button-full" type="submit">Book Appointment</button>
+          <p class="form-note" id="form-note" aria-live="polite">
+            Demo form only. On a live dental site, this can connect to WhatsApp, GoHighLevel, or your booking workflow.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <p>Dr. Aanya Sharma Dental Care</p>
+      <p><span id="year"></span> All rights reserved.</p>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
